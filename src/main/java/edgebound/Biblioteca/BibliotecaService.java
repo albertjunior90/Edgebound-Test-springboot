@@ -44,7 +44,7 @@ public class BibliotecaService {
 	        libro.setFechaRegistro(nuevoLibro.getFechaRegistro());
 	        libro.setNombre(nuevoLibro.getNombre());
 	        libro.setSeccion(nuevoLibro.getSeccion());
-	        return libroRepo.save(nuevoLibro);
+	        return libroRepo.save(libro);
 	      })
 	      .orElseGet(() -> {
 	        nuevoLibro.setId(id);
